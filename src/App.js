@@ -28,12 +28,12 @@ function App() {
   };
   return (
     <div className="container">
+      <h1>Weather App</h1>
       <Search onSearchChange={handleOnSearchChange} />
       {currentWeather && <CurrentWeather data={currentWeather} />}
       {forecast && <Forecast data={forecast} />}
     </div>
   );
-  console.log(forecast);
 }
 
 export default App;
